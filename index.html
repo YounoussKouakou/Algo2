@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/aa3d26eed5.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>classeur de notes</title>
+  </head>
+  <body class="bg-gradient-to-t from-blue-200 to-blue-600">
+    <section class="w-full h-[700px] flex justify-center items-center">
+      <div
+        class="bg-green-100 h-auto w-96 flex justify-center items-center rounded text-center p-10"
+      >
+        <div>
+          <h1 class="font-bold text-red-900 my-5 mb-9 mx-2 bg-white rounded">
+            CLASSEUR DE NOTES
+          </h1>
+          <div>
+            <input
+              class="rounded w-[200px] bg-slate-800 h-9 w-full text-center font-bold text-yellow-500"
+              type="text"
+              id="saisie"
+              placeholder="Entrez des nombres separés d'espaces"
+            />
+          </div>
+          <div class="flex justify-center items-center mt-3 mb-9">
+            <div
+              class="border rounded border-black w-10 text-center bg-green-600"
+            >
+              <button id="btnTrie">Trier</button>
+            </div>
+          </div>
+
+          <div
+            id="resultat"
+            class="resultat border mt-5 rounded h-auto w-auto bg-green-800 text-yellow-400 font-bold"
+            placeholder="notes"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="container-fluid gap-9 pt-9 p-6">
+      <div class="flex justify-around items-center pb-2 mx-10 px-10">
+        <p>&copy 2025</p>
+        <p>AMARA GBOKO ANZOUMANAN</p>
+        <p>Tout droit reservé</p>
+      </div>
+      <div class="flex justify-center items-center gap-10 pt-5">
+        <a href="#"><i class="fa fa-facebook text-blue-700"></i></a>
+        <a href="#"><i class="fa fa-twitter text-blue-600"></i></a>
+        <a href="#"><i class="fa fa-instagram text-purple-700"></i></a>
+        <a href="#"><i class="fa fa-youtube text-red-500"></i></a>
+        <a href="#home"><i class="fa fa-home pr-2 text-white font-bold"></i></a>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
