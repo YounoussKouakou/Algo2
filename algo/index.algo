@@ -1,0 +1,38 @@
+ALGORITHM lireUnePhrase
+VAR
+    longueurPhrase : INTEGER
+    nombreMots : INTEGER
+    nombreVoyelles : INTEGER
+    lastCaractere : string
+    voyelles : string
+    caractere : string
+
+BEGIN
+    longueurPhrase := 0;
+    nombreMots := 0;
+    nombreVoyelles := 0;
+    voyelles := ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+    caractere := ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q";"r","s","t","u","v","w","x","y","z", "A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
+    
+    write("saisir une phrase")
+    read(phrase)
+    lastCaractere :<= phrase.length;
+
+        FOR caractere FROM phrase  DO
+        IF (caractere = voyelles) THEN
+            nombreVoyelles += 1
+        ELSE_IF (caractere = " ") THEN
+            IF (lastCaractere != " ") THEN
+                nombreMots += 1
+            ELSE
+                longueurPhrase += 1
+            END_IF
+        END_IF
+        END_FOR
+    END_IF
+
+    write ("longueur de phrase : ", longueurPhrase)
+    write ("nombre de mots : ", nombreMots)
+    write ("nombre de voyelles : ", nombreVoyelles)
+
+END
